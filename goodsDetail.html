@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>简单的轮播</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>-->
+    <!--<link rel="stylesheet" href="css/swiper.min.css">-->
+    <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/goodsDetail.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a title="" href="photos/1.jpg"><img src="photos/1.jpg" alt="First slide"></a>
+        </div>
+        <div class="item">
+            <a title="" href="photos/2.jpg"><img src="photos/2.jpg" alt="Second slide"></a>
+        </div>
+        <div class="item">
+            <a title="" href="photos/3.jpg"><img src="photos/3.jpg" alt="Third slide"></a>
+        </div>
+    </div>
+
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--商品信息展示start-->
+<div style="background-color: #f0f0f0">
+<div class="goods-message">
+    <div class="goods-name">手环X33</div>
+    <div class="goods-price">
+        <text>100</text>积分</div>
+</div>
+    <!--活动链接-->
+    <div class="Active" id="chose">
+        <text>相关活动</text><img src="images/ruleColor.png">
+    </div>
+    <!--商品样式选择-->
+<div class="goods-style">
+    <text>请选择 规格</text><img src="images/ruleColor.png">
+    <div style='clear:both;'></div>
+</div>
+    <!--店铺信息-->
+<div class="location">
+    <div class="shop-name" style="font-size: 18px;"> 适用门店</div>
+    <div class="shop">
+    <div class="shop-name"> 中华美食店我也不知道</div>
+    <div class="shop-place"> 广东科学技术职业学院S4408</div>
+    </div>
+    <div class="shop-distant"> 65km</div>
+    <div class="shop-location"> <img src="images/location.png"></div>
+    <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
+    <div class="shop">
+        <div class="shop-name"> 中华美食店我也不知道</div>
+        <div class="shop-place"> 广东科学技术职业学院S4408</div>
+    </div>
+    <div class="shop-distant"> 65km</div>
+    <div class="shop-location"> <img src="images/location.png"></div>
+    <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
+</div>
+    <!--商品详情-->
+    <div class="goods-detail">
+        <text>商品详情</text>
+        <text id="goods-name">手环X33</text>
+        <img src="photos/1.jpg">
+    </div>
+</div>
+<!--商品信息展示end-->
+<button id="exchange">我要兑换</button>
+<script src="js/goodsDetail.js"></script>
+</body>
+</html>

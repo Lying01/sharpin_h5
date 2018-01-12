@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*顶部导航条*/
+#topNav {
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    font: 16px/32px hiragino sans gb, microsoft yahei, simsun;
+    background-color: #ffffff;
+}
+
+#topNav .swiper-slide {
+    padding: 0 5px;
+    letter-spacing: 2px;
+    width: 5rem;
+    text-align: center;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+#topNav .swiper-slide span {
+    transition: all .3s ease;
+    display: block;
+}
+
+/*被选中的*/
+#topNav .active span {
+    transform: scale(1.1);
+    color: #30b54c;
+}
+
+/*被选中的底部横条*/
+#topNav .active div {
+    height: 2px;
+    width: 80%;
+    background-color: #30b54c;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/*积分条*/
+.point {
+    height: auto;
+    position: fixed;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    font: 14px/32px hiragino sans gb, microsoft yahei, simsun;
+    border-bottom: 1px solid #f8f8f8;
+    background-color: #ffffff;
+}
+
+/*我的积分*/
+.point-number {
+    display: inline;
+    /*width: 200px;*/
+    padding: 0 10px;
+    /*border-bottom: 1px solid #f8f8f8;*/
+    background-color: #ffffff;
+    color: #8c8c8c;
+}
+
+/*我的兑换*/
+.point-record{
+    display: inline;
+    float: right;
+    padding-right: 10px;
+    color: #8c8c8c;
+}
+
+
+#flow-box {
+    margin: 10px auto 0 auto;
+    padding: 0;
+    position: relative
+}
+
+#flow-box li {
+    width: 40%;
+    position: absolute;
+    list-style: none;
+    background-color: #ffffff;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 500ms ease-in-out;
+    -moz-transition: opacity 500ms ease-in-out;
+    -o-transition: opaicty 500ms ease-in-out;
+}
+
+#flow-box li img {
+    width: 100%;
+}
+
+#flow-box li a {
+    display: block;
+    margin:5px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+
+

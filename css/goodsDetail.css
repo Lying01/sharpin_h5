@@ -1,0 +1,225 @@
+
+/*轮播块start*/
+#myCarousel{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+/*轮播图图片大小*/
+.carousel-inner img{
+    width: 70%;
+    max-width:70%;
+    max-height:100%;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+
+}
+/*展示图片指标*/
+.carousel-indicators{
+    /*position: fixed;*/
+    /*z-index: 3;*/
+}
+
+.carousel-indicators .active {
+    border: 1px solid #000000;
+    background-color: #000000;
+}
+/*指标*/
+.carousel-indicators li{
+    border: 1px solid #B2B2B2;
+    background-color: #B2B2B2;
+}
+/*左翻*/
+.carousel-control.left{
+    background-image: linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
+}
+/*右翻*/
+.carousel-control.right{
+    background-image: linear-gradient(to left,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
+}
+/*轮播块end*/
+
+/*商品信息*/
+.goods-message{
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #8c8c8c;
+    line-height: 20px;
+    background-color: #FFFFFF;
+}
+/*商品名*/
+.goods-name{
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 26px;
+    /*padding-bottom: 20px;*/
+    color: #3C3C3C;
+    font-weight: bold;
+}
+/*商品积分*/
+.goods-price{
+    color: #30b54c;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.goods-price text{
+    font-size: 20px;
+    /*line-height: 42px;*/
+    margin-right: 5px;
+}
+/*相关活动*/
+.Active{
+    margin: 10px 0;
+    padding: 15px;
+    color: #3C3C3C;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    background: #fff;
+}
+.Active img{
+    float: right;
+    width: 15px;
+    height: 20px;
+    vertical-align: middle;
+}
+/*选择款式*/
+.goods-style{
+    margin: 10px 0;
+    padding: 15px;
+    color: #3C3C3C;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    background: #fff;
+}
+.goods-style img{
+    float: right;
+    width: 15px;
+    height: 20px;
+    vertical-align: middle;
+}
+/*地址信息*/
+.location{
+    margin: 10px 0;
+    padding: 15px;
+    background: #fff;
+}
+/*店铺信息*/
+.shop{
+    display: inline-block;
+    width: 160px;
+}
+/*店铺名*/
+.shop-name{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: rgb(60, 60, 60);
+    width: 160px;
+}
+/*店铺地址*/
+.shop-place{
+    width: 160px;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(140,140,140);
+}
+/*与店铺距离*/
+.shop-distant{
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+    line-height: 20px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+/*店铺折扣*/
+.shop-discount{
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    float: right;
+    margin-right: 10px;
+}
+.shop-discount img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+}
+.shop-discount text{
+    position: absolute;
+    z-index: 10;
+    font-size: 16px;
+    color: #fff;
+    top: 40px;
+    /*left: 20px;*/
+}
+/*店铺定位地点*/
+.shop-location{
+    margin-top: 10px;
+    float: right;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid #8c8c8c;
+}
+.shop-location img{
+    margin-top: 5px;
+    float: right;
+    /*margin-right: 5px;*/
+    display: inline-block;
+    /*line-height: 50px;*/
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+}
+/*商品详情*/
+.goods-detail{
+    margin: 10px 0 30px 0;
+    padding: 15px;
+    background: #fff;
+}
+.goods-detail text{
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(60, 60, 60);
+}
+.goods-detail #goods-name{
+    font-size: 16px;
+}
+.goods-detail img{
+    width: 100%;
+    height: auto;
+}
+
+/*兑换按钮*/
+#exchange{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #30B54C;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: #FFFFFF;
+    border: 1px solid #30B54C;
+}
