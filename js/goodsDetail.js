@@ -16,3 +16,14 @@ function autoWidth() {//按屏幕变动自动改变宽高
 }
 autoWidth();
 window.onresize = autoWidth;//当屏幕大小变化时运行
+function showChose() {//显示选项卡
+    $(".show_modal").css("display", "block");
+    $("#body").css("background-color", "#ffffff");
+    $("#body").css("opacity", "0.5");
+
+    console.log("显示选项卡")
+}
+function close_modal() {//关闭选项卡
+    $(".show_modal").css("display", "none");
+    console.log("关闭选项卡")
+}

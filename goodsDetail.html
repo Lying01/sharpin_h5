@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>简单的轮播</title>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <!--<link rel="stylesheet" href="css/swiper.min.css">-->
     <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -47,38 +47,42 @@
 </div>
 <!--商品信息展示start-->
 <div style="background-color: #f0f0f0">
-<div class="goods-message">
-    <div class="goods-name">手环X33</div>
-    <div class="goods-price">
-        <text>100</text>积分</div>
-</div>
+    <div class="goods-message">
+        <div class="goods-name">手环X33</div>
+        <div class="goods-price">
+            <text>100</text>
+            积分
+        </div>
+    </div>
     <!--活动链接-->
-    <div class="Active" id="chose">
-        <text>相关活动</text><img src="images/ruleColor.png">
+    <div class="Active">
+        <text>相关活动</text>
+        <img src="images/ruleColor.png">
     </div>
     <!--商品样式选择-->
-<div class="goods-style">
-    <text>请选择 规格</text><img src="images/ruleColor.png">
-    <div style='clear:both;'></div>
-</div>
+    <div class="goods-style" onclick="showChose()">
+        <text>请选择 规格</text>
+        <img src="images/ruleColor.png">
+        <div style='clear:both;'></div>
+    </div>
     <!--店铺信息-->
-<div class="location">
-    <div class="shop-name" style="font-size: 18px;"> 适用门店</div>
-    <div class="shop">
-    <div class="shop-name"> 中华美食店我也不知道</div>
-    <div class="shop-place"> 广东科学技术职业学院S4408</div>
+    <div class="location">
+        <div class="shop-name" style="font-size: 18px;"> 适用门店</div>
+        <div class="shop">
+            <div class="shop-name"> 中华美食店我也不知道</div>
+            <div class="shop-place"> 广东科学技术职业学院S4408</div>
+        </div>
+        <div class="shop-distant"> 65km</div>
+        <div class="shop-location"><img src="images/location.png"></div>
+        <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
+        <div class="shop">
+            <div class="shop-name"> 中华美食店我也不知道</div>
+            <div class="shop-place"> 广东科学技术职业学院S4408</div>
+        </div>
+        <div class="shop-distant"> 65km</div>
+        <div class="shop-location"><img src="images/location.png"></div>
+        <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
     </div>
-    <div class="shop-distant"> 65km</div>
-    <div class="shop-location"> <img src="images/location.png"></div>
-    <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
-    <div class="shop">
-        <div class="shop-name"> 中华美食店我也不知道</div>
-        <div class="shop-place"> 广东科学技术职业学院S4408</div>
-    </div>
-    <div class="shop-distant"> 65km</div>
-    <div class="shop-location"> <img src="images/location.png"></div>
-    <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
-</div>
     <!--商品详情-->
     <div class="goods-detail">
         <text>商品详情</text>
@@ -87,7 +91,21 @@
     </div>
 </div>
 <!--商品信息展示end-->
-<button id="exchange">我要兑换</button>
+<button id="exchange" onclick="showChose()">我要兑换</button>
+<div class="show_modal" style="display: none">
+    <div class="modal_all">
+        <div class="goods-info">
+            <img src="photos/1.jpg">
+            <text><a>100</a> 积分</text>
+            <text>请选择 <a>规格 颜色</a></text>
+        </div>
+        <div class="colors">
+            <button>红色</button>
+            <button>lv色</button>
+        </div>
+    </div>
+    <div class="mask" onclick="close_modal()"></div>
+</div>
 <script src="js/goodsDetail.js"></script>
 </body>
 </html>
