@@ -314,16 +314,28 @@
     outline: none;
 }
 
-.colors {
+/*选项组*/
+.option {
     display: inline-block;
     position: relative;
-    top: 20px;
-    left: 20px;
-    width: 100%;
+    width: 92%;
+    padding: 15px 10px;
+    margin: 5px 15px;
+    border-bottom:1px solid #8c8c8c;
     font-size: 20px;
     font-weight: bold;
 }
-.colors button{
+
+/*选项标题名*/
+.option text{
+    display: block;
+    margin-bottom:12px;
+}
+
+/*选项未选中*/
+.option span{
+    display: inline-block;
+    margin: 10px auto;
     color: #8c8c8c;
     margin-right: 20px;
     background-color: #f8f8f8;
@@ -331,8 +343,29 @@
     border: 1px solid #8c8c8c;
 }
 
-.colors button:focus{
+/*选项被选中*/
+.option span.on{
     background-color: #30B54C;
     color: #FFFFFF;
-    border: 1px solid #8c8c8c;
+    border: 1px solid #30B54C;
+    outline: none;
+}
+
+/*购买数量*/
+.numberSelector{
+    display: inline-block;
+    position: relative;
+    width: 92%;
+    padding: 15px 10px;
+    margin: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.numberSelector .num{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+.numberSelector .num img{
+    margin: 0 5px;
 }

@@ -73,14 +73,7 @@
     </style>
 </head>
 <body>
-<div class="row model" id="chose" onclick="showChose()">
-    <div class="col-lg-3"></div>
-    <div class="col-xs-6 col-lg-6">选择 商品型号</div>
-    <div class="col-xs-4 hidden-lg"></div>
-    <div class="col-xs-2  col-lg-2"><img src="images/jiantou-01.png" class="img-responsive" style="width: 10px;"></div>
-    <div class="col-lg-1"></div>
-</div>
-<div class="tao_bao" style="display: none" id="wrap">
+<div class="tao_bao" style="display: block" id="wrap">
     <div id="top">
         <p id='model'>
             <text>型号</text>
@@ -113,30 +106,15 @@
 </div>
 
 <script type="text/javascript">
-//    $().ready(function() {
-//        $("#chose").click(function() {
-//            $(".taobao").slideDown();
-//            $("#body").css("background-color", "#ffffff");
-//            $("#body").css("opacity", "0.5");
-//            //				$("#bodys").css("background-color", "#000");
-//            //				$("#bodys").css("opacity", "0.8");
-//
-//        });
-    function showChose() {
-        $(".tao_bao").css("display", "block")
-        $("#body").css("background-color", "#ffffff");
-        $("#body").css("opacity", "0.5");
-//        				$("#bodys").css("background-color", "#000");
-//        				$("#bodys").css("opacity", "0.8");
-    }
-    var mSpan = document.getElementById('model').getElementsByTagName('span');
-    var cSpan = document.getElementById('color').getElementsByTagName('span');
-    var rSpan = document.getElementById('rom').getElementsByTagName('span');
-    var bSpan = document.getElementById('banben').getElementsByTagName('span');
-    var aSpan = document.getElementsByTagName('span');
-    var oModel = document.getElementById('model');
-    var oRom = document.getElementById('rom');
-    var oPrice = document.getElementById('price');
+    var mSpan = document.getElementById('model').getElementsByTagName('span');//型号
+    var cSpan = document.getElementById('color').getElementsByTagName('span');//颜色
+    var rSpan = document.getElementById('rom').getElementsByTagName('span');//内存
+    var bSpan = document.getElementById('banben').getElementsByTagName('span');//版本
+
+    var aSpan = document.getElementsByTagName('span');//所有选项卡
+//    var oModel = document.getElementById('model');
+//    var oRom = document.getElementByI  d('rom');
+//    var oPrice = document.getElementById('price');
 
     mSpan[0].className = 'on';
     cSpan[0].className = 'on';
@@ -148,50 +126,53 @@
 
         aSpan[i].onclick = function(){
             var siblings = this.parentNode.children;
+            console.log(siblings);
             for (var j=0;j<siblings.length;j++ )
             {
                 siblings[j].className = '';
             }
             this.className = 'on';
 
-            if ( this.parentNode == oModel || this.parentNode == oRom )
-            {
-                price();
-            }
+//            判断是否需要加价
+//            if ( this.parentNode == oModel || this.parentNode == oRom )
+//            {
+//                price();
+//            }
         };
     };
 
-    function price(){
-        var p1 = 0;
-        var p2 = 0;
-        for (var i=0;i<mSpan.length;i++ )
-        {
-            if ( mSpan[i].className == 'on' )
-            {
-                p1 = i?6088:5288;
-                break;
-            };
-        };
-        for (var i=0;i<rSpan.length;i++ )
-        {
-            if ( rSpan[i].className == 'on' )
-            {
-                switch ( i )
-                {
-                    case 0:
-                        p2 = 0;
-                        break;
-                    case 1:
-                        p2 = 800;
-                        break;
-                    case 2:
-                        p2 = 1600;
-                        break;
-                }
-            }
-        };
-        oPrice.innerHTML = p1+p2;
-    };
+//    计算价格函数
+//    function price(){
+//        var p1 = 0;
+//        var p2 = 0;
+//        for (var i=0;i<mSpan.length;i++ )
+//        {
+//            if ( mSpan[i].className == 'on' )
+//            {
+//                p1 = i?6088:5288;
+//                break;
+//            };
+//        };
+//        for (var i=0;i<rSpan.length;i++ )
+//        {
+//            if ( rSpan[i].className == 'on' )
+//            {
+//                switch ( i )
+//                {
+//                    case 0:
+//                        p2 = 0;
+//                        break;
+//                    case 1:
+//                        p2 = 800;
+//                        break;
+//                    case 2:
+//                        p2 = 1600;
+//                        break;
+//                }
+//            }
+//        };
+//        oPrice.innerHTML = p1+p2;
+//    };
 
 </script>
 
