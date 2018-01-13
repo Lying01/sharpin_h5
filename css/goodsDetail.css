@@ -8,8 +8,8 @@
 
 /*轮播图图片大小*/
 .carousel-inner img {
-    width: 70%;
-    max-width: 70%;
+    width: auto;
+    height: 200px;
     max-height: 100%;
     margin: 0 auto;
     background-color: #f0f0f0;
@@ -367,5 +367,5 @@
     right: 10px;
 }
 .numberSelector .num img{
-    margin: 0 5px;
+    margin: 0 5px 5px;
 }
