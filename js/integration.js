@@ -1,19 +1,19 @@
-var mySwiper = new Swiper('#topNav', {
+var my_swiper = new Swiper('#topNav', {
     freeMode: true,
     freeModeMomentumRatio: 0.5,
     slidesPerView: 'auto',
 
 });
 
-swiperWidth = mySwiper.container[0].clientWidth
-maxTranslate = mySwiper.maxTranslate();
-maxWidth = -maxTranslate + swiperWidth / 2
+swiperWidth = my_swiper.container[0].clientWidth;
+maxTranslate = my_swiper.maxTranslate();
+maxWidth = -maxTranslate + swiperWidth / 2;
 
 $(".swiper-container").on('touchstart', function(e) {
     e.preventDefault()
 })
 
-mySwiper.on('tap', function(swiper, e) {
+my_swiper.on('tap', function(swiper, e) {
 
 //	e.preventDefault()
 
@@ -23,21 +23,21 @@ mySwiper.on('tap', function(swiper, e) {
     slideCenter = slideLeft + slideWidth / 2
     // 被点击slide的中心点
 
-    mySwiper.setWrapperTransition(300)
+    my_swiper.setWrapperTransition(300)
 
     if (slideCenter < swiperWidth / 2) {
 
-        mySwiper.setWrapperTranslate(0)
+        my_swiper.setWrapperTranslate(0)
 
     } else if (slideCenter > maxWidth) {
 
-        mySwiper.setWrapperTranslate(maxTranslate)
+        my_swiper.setWrapperTranslate(maxTranslate)
 
     } else {
 
         nowTlanslate = slideCenter - swiperWidth / 2
 
-        mySwiper.setWrapperTranslate(-nowTlanslate)
+        my_swiper.setWrapperTranslate(-nowTlanslate)
 
     }
 

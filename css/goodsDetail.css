@@ -275,12 +275,13 @@
     z-index: 99;
     width: 100%;
     height: 390px;
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;
 }
 
 /*选项卡商品信息*/
 .goods-info {
-    padding: 30px;
+    margin-bottom: 5px;
+    padding: 20px;
     border-bottom: 1px solid #8c8c8c;
 }
 
@@ -288,8 +289,8 @@
     position: fixed;
     left: 15px;
     bottom: 320px;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     z-index: 99;
     border: 1px solid #8c8c8c;
 }
@@ -298,7 +299,7 @@
     display: inline-block;
     position: relative;
     /*margin-top: 10px;*/
-    left: 150px;
+    left: 120px;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
@@ -319,17 +320,15 @@
     display: inline-block;
     position: relative;
     width: 92%;
-    padding: 15px 10px;
     margin: 5px 15px;
     border-bottom:1px solid #8c8c8c;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 /*选项标题名*/
 .option text{
     display: block;
-    margin-bottom:12px;
 }
 
 /*选项未选中*/
@@ -337,10 +336,9 @@
     display: inline-block;
     margin: 10px auto;
     color: #8c8c8c;
-    margin-right: 20px;
-    background-color: #f8f8f8;
-    padding:5px 30px;
-    border: 1px solid #8c8c8c;
+    background-color: #f0f0f0;
+    padding:2px 30px;
+    border: 1px solid #f0f0f0;
 }
 
 /*选项被选中*/

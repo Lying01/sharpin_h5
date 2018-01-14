@@ -2,9 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/exchange.css">
+
     <title>我的兑换</title>
 </head>
-<body>
+<body style="background-color: #f0f0f0">
+<!--顶部导航栏start-->
+<div id="topNav" class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide active"><span>实物</span>
+            <div></div>
+        </div>
+        <div class="swiper-slide"><span>票券</span>
+            <div></div>
+        </div>
+    </div>
+</div>
 
+<!--实物-->
+<div class="matter-ul" style="display: block;">
+    <div class="matter-li">
+        <img src="photos/1.jpg">
+        <div class="title">标题标题标题我也不知道这是什么东西啊我也不知道2333333</div>
+        <div class="property">颜色:官方标配, 规格:官方标配</div>
+        <div class="number">X1</div>
+    </div>
+    <div class="matter-li">
+        <img src="photos/2.jpg">
+        <div class="title">标题标题标题我也不知道这是什么东西啊我也不知道2333333</div>
+        <div class="property">颜色:官方标配, 规格:官方标配</div>
+        <div class="number">X1</div>
+    </div>
+    <div class="matter-li">
+        <img src="photos/3.jpg">
+        <div class="title">标题标题标题我也不知2333</div>
+        <div class="property">颜色:蓝色</div>
+        <div class="number">X1</div>
+    </div>
+</div>
+
+<!--票券-->
+<div class="ticket" style="display: none;">
+    <div class="ticket-header">
+        <div class="ticket-logo">
+            <div style="background-image:url('photos/1.jpg')"></div>
+        </div>
+        <div>{{item.data.goodsName}}</div>
+        <img src="images/changRecord.png" style="width:20px;height:20px;float:right;margin-top:33px;">
+        <div style="clear:both;"></div>
+    </div>
+    <div class="ticket-content" style="background:url('photos/1.jpg') no-repeat center center;background-size:cover;">
+        <div class="ticket-content-title">
+            <div style="font-size:42px;">星巴克</div>
+            <div style="font-size:28px;">{{item.propertyText}}</div>
+        </div>
+        <div class="dashLine"></div>
+        <!-- <div class="ticket-date">有效期至{{item.data.goodsExpiredTime}}</div> -->
+        <div class="ticket-price">
+            <text>{{item.point}}</text>积分
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/exchange.js"></script>
 </body>
 </html>

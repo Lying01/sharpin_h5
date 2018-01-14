@@ -24,10 +24,10 @@ function showChose() {//显示选项卡
     // console.log("显示选项卡");
     //计算modal的高度
     var $a = parseInt($(".goods-info").css("height"));//头部信息高度
-    var $b = parseInt($(".option").css("height")) * 2;//选项部分高度
+    var $b = parseInt($(".option").css("height")) * 3;//选项部分高度
     var $c = parseInt($(".numberSelector").css("height"));//购买数量高度
     var $modal_height = $a + $b +$c + 50;//所需modal高度
-    var $img_bottom = $modal_height - 70;//商品图距离底部高度
+    var $img_bottom = $modal_height - 50;//商品图距离底部高度
     // console.log($modal_height);
     $(".modal_all").css("height", $modal_height);
     $(".goods-info img").css("bottom", $img_bottom);
