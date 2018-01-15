@@ -81,12 +81,13 @@
 }
 /*我的收藏end*/
 
-.card{
-    padding: 10px;
-    background: #fff;
-    margin-bottom: 10px;
+.note{
+    padding: 15px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
 }
-.card-title{
+
+.note-title{
     width: 100%;
     margin: 10px auto;
     text-align: center;
@@ -95,7 +96,7 @@
     font-weight: bold;
     color: rgb(60, 60, 60);
 }
-.card-content div{
+.note-content div{
     margin: 10px 0;
     font-size:18px;
     line-height: 18px;
@@ -222,10 +223,18 @@
 }
 /*exchange*/
 
-/*user*/
+/*user share*/
+.card{
+    margin: 10px;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
 .user {
     width: auto;
-    height: 60px;
+    height: 50px;
     background: #fff;
     padding: 0;
 }
@@ -237,14 +246,14 @@
 .user-img img{
     display: inline-block;
     margin: 10px;
-    width: 40px;
+    width: 30px;
     border-radius: 50%;
 }
 
 .user-name {
     display: inline-block;
     float: left;
-    margin-top: 20px;
+    margin-top: 13px;
     width: 80px;
     height: 37px;
     font-size: 16px;
@@ -254,20 +263,82 @@
     font-weight: bold;
 }
 
+.user-point {
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    width: 100px;
+    margin-top: 13px;
+    vertical-align: middle;
+    /*line-height: 130px;*/
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+}
+
+.user-point text {
+    color: rgb(255, 46, 46);
+}
+
 .user-QR {
-    width: 20px;
-    height: 20px;
-    margin: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px;
     float: right;
     /*margin-right: 30px;*/
     position: relative;
 }
 .user-QR img{
+    width: 30px;
+    height: 30px;
+}
+.user-QR::before{
+    height:100%;
+    width:1px;
+    background:rgb(140,140,140);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    content:'';
+}
+
+.user-ul {
+    margin: 20px 0;
+}
+
+.user-li {
+    background: #fff;
+    padding: 0 10px;
+    height: 50px;
+}
+
+.user-li:first-child {
+    margin-bottom: 20px;
+}
+
+.user-li img {
+    margin-left: 10px;
+    width: 20px;
+    height: 15px;
+}
+
+.user-li text {
+    font-size: 16px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.user-li .ToGo {
+    float: right;
+    margin-top: 15px;
+}
+
+.user-li .ToGo img {
     width: 20px;
     height: 20px;
 }
 
-.user_title {
+.share-title {
     margin: 20px auto;
     text-align: center;
     font-size: 16px;
@@ -275,7 +346,7 @@
     color: rgb(60, 60, 60);
 }
 
-.user_point {
+.share-point {
     line-height: 20px;
     text-align: center;
     font-size: 18px;
@@ -283,31 +354,20 @@
     font-weight: bold;
 }
 
-.user_point text{
+.share-point text{
     color: rgb(255, 46, 46);
     font-size: 26px;
     line-height: 26px;
 }
 
-.way {
+.share-way {
     margin: 20px;
     font-size: 14px;
     line-height: 14px;
     color: rgb(200, 200, 200);
 }
 
-.QR {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.QR img {
-    width: 200px;
-    height: 200px;
-}
-
-.user_button {
+.share-button {
     background: rgb(255, 46, 46);
     position: fixed;
     bottom: 0;
@@ -318,7 +378,18 @@
     padding:7px;
     border: 1px solid red;
 }
-/*user*/
+
+.share-QR {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.share-QR img {
+    width: 200px;
+    height: 200px;
+}
+/*user share*/
 
 /*goodsDetail*/
 /*轮播块start*/
@@ -793,7 +864,7 @@
     width: 100%;
 }
 
-#flow-box li a {
+#flow-box li{
     display: block;
     margin:5px auto;
     width: 100%;
@@ -803,4 +874,5 @@
     line-height: 18px;
     text-decoration: none;
 }
+/*#flow-box a{}*/
 /*integration*/

@@ -92,34 +92,6 @@ function flow(mh, mv) {//参数mh和mv是定义数据块之间的间距，mh是�
         oArr[x] = lenArr[i] + oArr[x] + mv;//更新该列的高度
     }
 
-    function scroll() {//滚动加载数据
-        var st = oArr[_getMinKey(oArr)];
-        var scrollTop = document.documentElement.scrollTop > document.body.scrollTop? document.documentElement.scrollTop : document.body.scrollTop;
-        if (scrollTop >= st - document.documentElement.clientHeight) {
-            window.onscroll = null;//为防止重复执行，先清除事件
-            _request(null, "GetList.php", function(data) {//当滚动到达最短的一列的距离时便发送ajax请求新的数据，然后执行回调函数
-                _addItem(data.d, function() {//追加数据
-                    var liLenNew = li.length;
-                    for(var i = liLen; i < liLenNew; i++) {
-                        lenArr.push(li[i].offsetHeight);
-                    }
-                    for(var i = liLen; i < liLenNew; i++) {
-                        var x = _getMinKey(oArr);
-                        li[i].style.top = oArr[x] + 10 + "px";
-                        li[i].style.left = iw * x + "px";
-                        li[i].style.opacity = "1";
-                        li[i].style["-moz-opacity"] = "1";
-                        li[i].style["filter"] = "alpha(opacity=100)";
-                        oArr[x] = lenArr[i] + oArr[x] + 10;
-                    }
-                    document.getElementById("loadimg").style.top = _getMaxValue(oArr) + 50 + "px";//loading向下移位
-                    liLen = liLenNew;
-                    window.onscroll = scroll;//执行完成，恢愎onscroll事件
-                });
-            })
-        }
-    }
-    window.onscroll =scroll;
 }
 
 var $dist = parseInt(window.screen.width/8);//数据块之间的距离
@@ -157,25 +129,7 @@ function _addItem(arr, callback) {
         img.src = arr[a].img;
     })()
 }
-//ajax请求
-function _request(reqdata, url, callback) {
-    var xmlhttp;
-    if (window.XMLHttpRequest) {
-        xmlhttp = new XMLHttpRequest();
-    }
-    else {
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            var data = eval("(" + xmlhttp.responseText + ")");
-            callback(data);
-        }
-    }
-    xmlhttp.open("POST", url);
-    xmlhttp.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-    xmlhttp.send(reqdata);
-}
+
 //追加html
 function _appendhtml(parent, child) {
     if (typeof (child) == "string") {

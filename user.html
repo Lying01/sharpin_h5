@@ -9,8 +9,8 @@
 <body style="background-color: #f0f0f0;margin: 0">
 
 <!--会员卡-->
-<div class="card" onclick="window.open('card.html')">
-    <img  src="images/vipCard.png">
+<div class="card">
+    <a href="card.html"><img  src="images/vipCard.png"></a>
 </div>
 
 <!--用户信息-->
@@ -21,33 +21,33 @@
     <div class="user-name">木以一</div>
     <div class="user-point">积分
         <text>2333</text> </div>
-    <div class="user-QR" id="showShare">
-        <img src="images/QR.png">
+    <div class="user-QR" id="showShare" onclick="window.open('share.html')">
+        <a href="share.html"><img src="images/QR.png"></a>
     </div>
     <!-- 二维码 -->
 </div>
 
 
 <div class="user-ul">
-    <div class="user-li" id="showExchange">
+    <div class="user-li" id="showExchange" onclick="window.open('exchange.html')">
         <img src="images/youhuijuan.png">
         <text>我的兑换</text>
         <div class="ToGo">
-            <img src="images/fanhui.png">
+            <a href="exchange.html"><img src="images/fanhui.png"></a>
         </div>
     </div>
-    <div class="user-li" id="showCollection">
+    <div class="user-li" id="showCollection" onclick="window.open('Collection.html')">
         <img src="images/save.png">
         <text>我的收藏</text>
         <div class="ToGo">
-            <img src="images/fanhui.png">
+            <a href="Collection.html"><img src="images/fanhui.png"></a>
         </div>
     </div>
-    <div class="user-li" id="myMessage">
+    <div class="user-li" id="myMessage" onclick="window.open('conversationRecord.html')">
         <img src="images/xiaoxi.png">
         <text>我的消息</text>
         <div class="ToGo">
-            <img src="images/fanhui.png">
+            <a href="conversationRecord.html"><img src="images/fanhui.png"></a>
         </div>
     </div>
 

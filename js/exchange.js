@@ -1,4 +1,4 @@
-var my_swiper = new Swiper('#topNav', {
+var my_swiper = new Swiper('#topNav2', {
     freeMode: true,
     freeModeMomentumRatio: 0.5,
     slidesPerView: 'auto',
@@ -39,9 +39,9 @@ my_swiper.on('tap', function(swiper, e) {
 
     }
 
-    $("#topNav  .active").removeClass('active')
+    $("#topNav2  .active").removeClass('active')
 
-    $("#topNav .swiper-slide").eq(swiper.clickedIndex).addClass('active')
+    $("#topNav2 .swiper-slide").eq(swiper.clickedIndex).addClass('active')
 
 })
 
