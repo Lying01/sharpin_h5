@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color: #f0f0f0">
+<body style="background-color: #f0f0f0; margin:0;">
 <!--顶部导航栏start-->
 <div id="topNav2" class="swiper-container">
     <div class="swiper-wrapper">
@@ -21,7 +21,7 @@
 </div>
 
 <!--实物-->
-<div class="matter-ul" style="display: block;">
+<div class="matter-ul" style="display: none;">
     <div class="matter-li">
         <img src="photos/1.jpg">
         <div class="title">标题标题标题我也不知道这是什么东西知道这是什么东西啊我也不知道2333333</div>
@@ -43,25 +43,30 @@
 </div>
 
 <!--todo:票券-->
-<div class="ticket" style="display: none;">
-    <div class="ticket-header">
-        <div class="ticket-logo">
-            <div style="background-image:url('photos/1.jpg')"></div>
+<div class="ticket-ul" style="display: block;">
+    <div class="ticket-li">
+        <div class="avatar">
+            <img src="photos/1.jpg">
         </div>
-        <div>{{item.data.goodsName}}</div>
-        <img src="images/changRecord.png" style="width:20px;height:20px;float:right;margin-top:33px;">
-        <div style="clear:both;"></div>
+        <div class="title">星巴克</div>
+        <div class="goto">
+            <img src="images/fanhui.png">
+        </div>
+        <!--<div class="ticket">-->
+            <img src="photos/1.png">
+        <!--</div>-->
     </div>
-    <div class="ticket-content" style="background:url('photos/1.jpg') no-repeat center center;background-size:cover;">
-        <div class="ticket-content-title">
-            <div style="font-size:42px;">星巴克</div>
-            <div style="font-size:28px;">{{item.propertyText}}</div>
+    <div class="ticket-li">
+        <div class="avatar">
+            <img src="photos/1.jpg">
         </div>
-        <div class="dashLine"></div>
-        <!-- <div class="ticket-date">有效期至{{item.data.goodsExpiredTime}}</div> -->
-        <div class="ticket-price">
-            <text>{{item.point}}</text>积分
+        <div class="title">麦当劳</div>
+        <div class="goto">
+            <img src="images/fanhui.png">
         </div>
+        <!--<div class="ticket">-->
+        <img src="photos/2.png">
+        <!--</div>-->
     </div>
 </div>
 <script src="js/jquery-3.1.1.min.js"></script>
