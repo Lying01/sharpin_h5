@@ -7,41 +7,59 @@
     <title>付款</title>
     <script src="js/jquery-3.1.1.min.js"></script>
 </head>
-<body>
-<div style="margin: 10px">
-<div class="card-ul" style="padding:0;">
-    <div class="card-li">
-        <div class="shop">
-            <div class="shop-name"> 中华美食店我也不知道</div>
-            <div class="shop-place"> 广东科学技术职业学院S4408</div>
+<body style="background-color: #f0f0f0;">
+<div style="background-color: #fff;padding:10px">
+    <div class="card-ul" style="padding:0;">
+        <div class="card-li">
+            <div class="shop">
+                <div class="shop-name"> 中华美食店我也不知道</div>
+                <div class="shop-place"> 广东科学技术职业学院S4408</div>
+            </div>
+            <div class="shop-distant"> 65km</div>
+            <div class="shop-location"><img src="images/location.png"></div>
+            <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
         </div>
-        <div class="shop-distant"> 65km</div>
-        <div class="shop-location"><img src="images/location.png"></div>
-        <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
-    </div>
-    <div class="card-li">
-        <div class="shop">
-            <div class="shop-name"> 中华美食店我也不知道</div>
-            <div class="shop-place"> 广东科学技术职业学院S4408</div>
-        </div>
-        <div class="shop-distant"> 65km</div>
-        <div class="shop-location"><img src="images/location.png"></div>
-        <div class="shop-discount" style="background-image:url('images/7.9.png');">8.5折</div>
     </div>
 </div>
+<div class="matter-ul" style="margin: 10px 0;">
+    <div class="matter-li">
+        <img src="photos/1.jpg">
+        <div class="title">标题标题标题我也不知道这是什么东西知道这是什么东西啊我也不知道2333333</div>
+        <div class="property">已选 "官方标配" "官方标配"</div>
+        <div class="number">X1</div>
+    </div>
+</div>
+<div class="pay-info">
+    <div id="title">
+        <text>小计:</text>
+        <text>运费:</text>
+        <text>积分:</text>
+    </div>
+    <div id="data">
+        <text>￥24.00</text>
+        <text>￥0.00</text>
+        <text>-69.00</text>
+    </div>
+    <div id="total">
+        <div><text>共计：</text> 69积分 + 24元</div>
+    </div>
+</div>
+<div class="pay-bottom">
+    <div>支付：<text>￥24.00</text></div>
+    <button>立即支付</button>
 </div>
 <script>
     function autoWidth() {//按屏幕变动自动改变宽高
-        if(window.screen.width <= 320){//如果屏幕宽度小于320px
-            var $width = window.screen.width/2-30;
-            $(".shop").css("width",$width);
-            $(".shop-name").css("width",$width);
-            $(".shop-place").css("width",$width);
-        }else if (window.screen.width > 320){//如果屏幕宽度大于等于320px
-            var $width = window.screen.width/2;
-            $(".shop").css("width",$width);
-            $(".shop-name").css("width",$width);
-            $(".shop-place").css("width",$width);
+        if (window.screen.width <= 320) {//如果屏幕宽度小于320px
+            var $width = window.screen.width / 2 - 30;
+            $(".shop").css("width", $width);
+            $(".shop-name").css("width", $width);
+            $(".shop-place").css("width", $width);
+        } else if (window.screen.width > 320) {//如果屏幕宽度大于等于320px
+            var $width = window.screen.width / 2;
+            $(".shop").css("width", $width);
+            $(".shop-name").css("width", $width);
+            $(".shop-place").css("width", $width);
         }
     }
 

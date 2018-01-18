@@ -9,18 +9,18 @@ swiperWidth = my_swiper.container[0].clientWidth;
 maxTranslate = my_swiper.maxTranslate();
 maxWidth = -maxTranslate + swiperWidth / 2;
 
-$(".swiper-container").on('touchstart', function(e) {
+$(".swiper-container").on('touchstart', function (e) {
     e.preventDefault()
 })
 
-my_swiper.on('tap', function(swiper, e) {
+my_swiper.on('tap', function (swiper, e) {
 
 //	e.preventDefault()
 
-    slide = swiper.slides[swiper.clickedIndex]
-    slideLeft = slide.offsetLeft
-    slideWidth = slide.clientWidth
-    slideCenter = slideLeft + slideWidth / 2
+    slide = swiper.slides[swiper.clickedIndex];
+    slideLeft = slide.offsetLeft;
+    slideWidth = slide.clientWidth;
+    slideCenter = slideLeft + slideWidth / 2;
     // 被点击slide的中心点
 
     my_swiper.setWrapperTransition(300)
@@ -50,11 +50,12 @@ my_swiper.on('tap', function(swiper, e) {
 //票券展示start
 
 //设置数据块宽度
-function autoWidth(){
-    var $width =  parseInt(window.screen.width/3);
+function autoWidth() {
+    var $width = parseInt(window.screen.width / 3);
     $("#flow-box li").css("width", $width);
     console.log($width);
 }
+
 autoWidth();
 window.onresize = autoWidth;
 
@@ -94,16 +95,21 @@ function flow(mh, mv) {//参数mh和mv是定义数据块之间的间距，mh是�
 
 }
 
-var $dist = parseInt(window.screen.width/8);//数据块之间的距离
+var $dist = parseInt(window.screen.width / 8);//数据块之间的距离
 console.log($dist);
 // 图片加载完成后执行
-window.onload = function() {flow($dist, $dist/2)};
+window.onload = function () {
+    flow($dist, $dist / 2)
+};
 // todo:改变窗口大小时重新布局
 var re;
-window.onresize = function() {
+window.onresize = function () {
     clearTimeout(re);
-    re = setTimeout(function() {flow($dist, $dist/2);}, 200);
+    re = setTimeout(function () {
+        flow($dist, $dist / 2);
+    }, 200);
 }
+
 //追加项
 function _addItem(arr, callback) {
     var _html = "";
@@ -111,7 +117,7 @@ function _addItem(arr, callback) {
     var l = arr.length;
     (function loadimg() {
         var img = new Image();
-        img.onload = function() {
+        img.onload = function () {
             a += 1;
             if (a == l) {
                 for (var k in arr) {
@@ -136,7 +142,7 @@ function _appendhtml(parent, child) {
         var div = document.createElement("div");
         div.innerHTML = child;
         var frag = document.createDocumentFragment();
-        (function() {
+        (function () {
             if (div.firstChild) {
                 frag.appendChild(div.firstChild);
                 arguments.callee();
@@ -150,6 +156,7 @@ function _appendhtml(parent, child) {
         parent.appendChild(child);
     }
 }
+
 //获取数字数组的最大值
 function _getMaxValue(arr) {
     var a = arr[0];
@@ -160,6 +167,7 @@ function _getMaxValue(arr) {
     }
     return a;
 }
+
 //获取数字数组最小值的索引
 function _getMinKey(arr) {
     var a = arr[0];
@@ -172,4 +180,5 @@ function _getMinKey(arr) {
     }
     return b;
 }
+
 //票券展示end
