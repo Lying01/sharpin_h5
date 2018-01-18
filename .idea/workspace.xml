@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73885d8c-bc70-42ba-8fa8-69c601ece738" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/framework7.ios.colors.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/framework7.ios.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/regionsObject2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ticketDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/new/new/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/card.html" afterPath="$PROJECT_DIR$/card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exchange.html" afterPath="$PROJECT_DIR$/exchange.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/integration.js" afterPath="$PROJECT_DIR$/js/integration.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay.html" afterPath="$PROJECT_DIR$/pay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user.html" afterPath="$PROJECT_DIR$/user.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -346,7 +336,7 @@
       <workItem from="1515121832522" duration="65018000" />
       <workItem from="1515637615107" duration="105575000" />
       <workItem from="1516161273946" duration="476000" />
-      <workItem from="1516161771886" duration="12316000" />
+      <workItem from="1516161771886" duration="12339000" />
     </task>
     <task id="LOCAL-00001" summary="1-11">
       <created>1515655892852</created>
@@ -537,11 +527,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516016753686</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="18-1-15">
+      <created>1516243182296</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1516243182296</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183385000" />
+    <option name="totallyTimeSpent" value="183408000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
