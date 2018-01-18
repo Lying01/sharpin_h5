@@ -51,7 +51,7 @@ my_swiper.on('tap', function (swiper, e) {
 
 //设置数据块宽度
 function autoWidth() {
-    var $width = parseInt(window.screen.width / 3);
+    var $width = (parseInt(window.screen.width)-40)/2;
     $("#flow-box li").css("width", $width);
     console.log($width);
 }
@@ -95,7 +95,7 @@ function flow(mh, mv) {//参数mh和mv是定义数据块之间的间距，mh是�
 
 }
 
-var $dist = parseInt(window.screen.width / 8);//数据块之间的距离
+var $dist = 15;//数据块之间的距离
 console.log($dist);
 // 图片加载完成后执行
 window.onload = function () {

@@ -847,7 +847,7 @@
     letter-spacing: 2px;
     width: 5rem;
     text-align: center;
-    border-bottom: 1px solid #f8f8f8;
+    /*border-bottom: 1px solid #f8f8f8;*/
 }
 
 #topNav .swiper-slide span {
@@ -863,8 +863,8 @@
 
 /*被选中的底部横条*/
 #topNav .active div {
-    height: 2px;
-    width: 80%;
+    height: 3px;
+    width: 50%;
     background-color: #30b54c;
     margin: 0 auto;
     border-radius: 5px;
@@ -907,12 +907,14 @@
     position: relative
 }
 
+
 #flow-box li {
     width: 40%;
     position: absolute;
     list-style: none;
     background-color: #ffffff;
     opacity: 0;
+    border-radius: 5px;
     -moz-opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 500ms ease-in-out;
@@ -926,13 +928,32 @@
 
 #flow-box li {
     display: block;
-    margin: 5px auto;
+    /*margin: 5px auto;*/
     width: 100%;
     text-align: center;
     font-size: 14px;
     color: #333;
     line-height: 18px;
     text-decoration: none;
+}
+
+#flow-box .title{
+    font-size: 14px;
+    margin-top: 5px;
+    padding:0 15px;
+    width: 80%;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+#flow-box .need{
+    margin-bottom: 5px;
+    color:#30B54C;
+    font-size: 12px;
 }
 
 /*-------integration------*/
