@@ -510,7 +510,7 @@
 
 /*商品信息*/
 .goods-message {
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-size: 18px;
     color: #8c8c8c;
     line-height: 20px;
@@ -518,9 +518,9 @@
 }
 
 /*商品名*/
-.goods-name {
+#goods-name {
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     /*padding-bottom: 20px;*/
     color: #3C3C3C;
@@ -528,43 +528,52 @@
 }
 
 /*商品积分*/
-.goods-price {
+#goods-price {
     color: #30b54c;
     font-size: 14px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     line-height: 26px;
 }
 
-.goods-price text {
+#goods-price text {
     font-size: 20px;
     /*line-height: 42px;*/
     margin-right: 5px;
 }
 
-/*相关活动*/
-.Active {
-    margin: 10px 0;
-    padding: 15px;
-    color: #3C3C3C;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: bold;
-    background: #fff;
+/*市场价*/
+#market-price{
+    display: inline-block;
+    font-size: 12px;
+    color: #9F9F9F;
+    width: 100px;
 }
 
-.Active img {
+/*相关活动*/
+#Active {
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 12px;
+    color: #9F9F9F;
+    width: 65px;
     float: right;
-    width: 15px;
-    height: 20px;
-    vertical-align: middle;
+    line-height: 20px;
+}
+
+#Active img {
+    margin-top: 5px;
+    float: right;
+    width: 8px;
+    height: 10px;
+    /*vertical-align: middle;*/
 }
 
 /*选择款式*/
 .goods-style {
     margin: 10px 0;
-    padding: 15px;
+    padding: 10px;
     color: #3C3C3C;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: bold;
     background: #fff;
@@ -572,8 +581,8 @@
 
 .goods-style img {
     float: right;
-    width: 15px;
-    height: 20px;
+    width: 10px;
+    height: 18px;
     vertical-align: middle;
 }
 
@@ -630,7 +639,7 @@
     font-size: 13px;
     float: right;
     margin-right: 10px;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 
 .shop-discount img {
@@ -650,7 +659,7 @@
 
 /*店铺定位地点*/
 .shop-location {
-    margin-top: 10px;
+    margin-top: 8px;
     float: right;
     display: inline-block;
     line-height: 50px;
@@ -675,13 +684,13 @@
 /*商品详情*/
 .goods-detail {
     margin: 10px 0 30px 0;
-    padding: 15px;
+    padding: 10px;
     background: #fff;
 }
 
 .goods-detail text {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -689,7 +698,7 @@
 }
 
 .goods-detail #goods-name {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .goods-detail img {

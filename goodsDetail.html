@@ -46,17 +46,21 @@
 <!--商品信息展示start-->
 <div style="background-color: #f0f0f0">
     <div class="goods-message">
-        <div class="goods-name">手环X33</div>
-        <div class="goods-price">
-            <text>100</text>
-            积分
+        <div id="goods-name">手环X33 J2坚果蓝牙音箱迷你手机无线便携户外重低音炮创意小音箱</div>
+        <div id="goods-price">
+            <text>600</text>
+            积分 +
+            <text>20</text>
+            元
+        </div>
+        <div id="market-price">市场价：69元</div>
+        <div id="Active">
+            <text>相关活动</text>
+            <img src="images/ruleColor.png">
         </div>
     </div>
     <!--活动链接-->
-    <div class="Active">
-        <text>相关活动</text>
-        <img src="images/ruleColor.png">
-    </div>
+
     <!--商品样式选择-->
     <div class="goods-style" onclick="showChose()">
         <text>请选择 规格</text>
@@ -64,9 +68,9 @@
         <div style='clear:both;'></div>
     </div>
     <!--店铺信息-->
-    <div class="location">
-        <div class="shop-name" style="font-size: 18px;"> 适用门店</div>
-        <div class="card-ul">
+    <div class="location" style="padding:15px 10px">
+        <div class="shop-name" style="font-size: 16px;"> 适用门店</div>
+        <div class="card-ul" style="padding-top: 0">
             <div class="card-li">
                 <div class="shop">
                     <div class="shop-name"> 中华美食店我也不知道</div>
@@ -95,7 +99,7 @@
     </div>
 </div>
 <!--商品信息展示end-->
-<button id="exchange" onclick="showChose()"><a href="pay.html"> 我要兑换</a></button>
+<button id="exchange" onclick="showChose()"><a href="pay.html" style="color: #FFF"> 我要兑换</a></button>
 <!--选项卡-->
 <div class="show_modal" style="display: none;">
     <div class="modal_all">
@@ -129,6 +133,11 @@
         </div>
     </div>
     <div class="mask" onclick="close_modal()"></div>
+</div>
+
+<!--加入购物车and客服悬浮按钮-->
+<div id="btn-add">
+    <img src="photos/组7@2x.png">
 </div>
 <script src="js/goodsDetail.js"></script>
 </body>
