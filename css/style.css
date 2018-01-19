@@ -528,15 +528,15 @@
 }
 
 /*商品积分*/
-#goods-price {
+#goods-price,.goods-price {
     color: #30b54c;
     font-size: 14px;
     /*font-weight: bold;*/
     line-height: 26px;
 }
 
-#goods-price text {
-    font-size: 20px;
+#goods-price text,.goods-price text {
+    font-size: 18px;
     /*line-height: 42px;*/
     margin-right: 5px;
 }
@@ -718,6 +718,38 @@
     color: #FFFFFF;
     border: 1px solid #30B54C;
     z-index: 99;
+}
+
+/*购物车悬浮按钮*/
+#btn-add{
+    position: fixed;
+    float: right;
+    bottom: 60px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+
+}
+#btn-add img{
+    width: 40px;
+    height: 40px;
+}
+
+/*客服悬浮按钮*/
+#btn-message{
+    position: fixed;
+    float: right;
+    bottom: 60px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+
+}
+#btn-message img{
+    width: 40px;
+    height: 40px;
 }
 
 /*选项卡*/
@@ -965,6 +997,22 @@
     font-size: 12px;
 }
 
+/*个人中心悬浮按钮*/
+#btn-my{
+    position: fixed;
+    float: right;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+
+}
+#btn-my img{
+    width: 40px;
+    height: 40px;
+}
+
 /*-------integration------*/
 
 /*---------pay--------*/
@@ -1199,8 +1247,93 @@ html, body {
     font-size: 38px !important;
 }
 
-.f-s-40 {
-    font-size: 40px !important;
+/*---------newAddress---------*/
+
+/*----------shoppingCart--------*/
+.goods-ul {
+    margin-bottom: 20px;
+    background-color: #FFF;
 }
 
-/*---------newAddress---------*/
+.goods-li {
+    border-top: 1px solid #f0f0f0;
+    width: 95%;
+    margin:10px;
+    display: block;
+    height: 100px;
+    background-color: #FFFFFF;
+    clear: both;
+}
+
+.goods-li:first-child{
+    border-top: none;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.goods-li:last-child{
+    padding-bottom: 10px;
+}
+
+.goods-li input{
+    display: none;
+}
+
+.myCheck + label{
+    border-radius: 50%;
+    display: inline-block;
+    margin: 45px 0;
+    float: left;
+    background-color: white;
+    border:1px solid #d3d3d3;
+    width:18px;
+    height:18px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.myCheck:checked + label:after{
+    content:"\2714";
+    color: #30B54C;
+}
+
+.goods-li img {
+    display: inline-block;
+    float: left;
+    width: 94px;
+    height: 88px;
+    margin: 10px;
+}
+
+.goods-li .title {
+    margin-top: 10px;
+    float: left;
+    top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 50%;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.goods-li .property {
+    margin-top: 2px;
+    float: left;
+    color: #8c8c8c;
+    font-size: 12px;
+    width: 170px;
+    line-height: 22px;
+}
+
+.goods-li .number {
+    margin-top: 8px;
+    float: right;
+    margin-right: 15px;
+    font-size: 14px;
+}
